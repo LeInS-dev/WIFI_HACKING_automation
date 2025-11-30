@@ -1,0 +1,164 @@
+{
+  "session_id": "20251129_205724",
+  "timestamp": "2025-11-29T20:57:25.554252",
+  "platform": "Windows 11",
+  "results": {
+    "Windows_Nativo": {
+      "netsh": {
+        "available": true,
+        "output": " \nNombre de interfaz : Wi-Fi \nActualmente hay 11 redes visibles. \n\nSSID 1 : RED_PROHIBIDA-5G\n    Tipo de red             : Infraestructura\n    AutenticaciÃ³n           : WPA2-Personal\n    Cifrado     ...",
+        "platform": "Windows"
+      },
+      "ping": {
+        "available": true,
+        "output": "\nHaciendo ping a 127.0.0.1 con 32 bytes de datos:\nRespuesta desde 127.0.0.1: bytes=32 tiempo<1m TTL=128\n\nEstad¡sticas de ping para 127.0.0.1:\n    Paquetes: enviados = 1, recibidos = 1, perdidos = 0\n  ...",
+        "platform": "Windows"
+      },
+      "tracert": {
+        "available": true,
+        "output": "\nTraza a la direcci¢n kubernetes.docker.internal [127.0.0.1]\nsobre un m ximo de 1 saltos:\n\n  1    <1 ms    <1 ms    <1 ms  kubernetes.docker.internal [127.0.0.1] \n\nTraza completa.\n",
+        "platform": "Windows"
+      },
+      "arp": {
+        "available": true,
+        "output": "\nInterfaz: 192.168.18.243 --- 0x4\n  Direcci¢n de Internet          Direcci¢n f¡sica      Tipo\n  192.168.18.1          14-46-58-41-68-cc     din mico  \n  192.168.18.5          70-3e-97-a5-74-88     din...",
+        "platform": "Windows"
+      },
+      "ipconfig": {
+        "available": true,
+        "output": "\nConfiguraci¢n IP de Windows\n\n   Nombre de host. . . . . . . . . : LAPTOP-4LRFNLJD\n   Sufijo DNS principal  . . . . . : \n   Tipo de nodo. . . . . . . . . . : mixto\n   Enrutamiento IP habilitado. . . :...",
+        "platform": "Windows"
+      },
+      "nslookup": {
+        "available": true,
+        "output": "Servidor:  UnKnown\nAddress:  192.168.18.1\n\nNombre:  google.com\nAddresses:  2800:3f0:4005:401::200e\n\t  172.217.28.110\n\n",
+        "platform": "Windows"
+      }
+    },
+    "Python_Security": {
+      "scapy": {
+        "available": false,
+        "error": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import scapy; print('Scapy available')\n    ^^^^^^^^^^^^\nModuleNotFoundError: No module named 'scapy'\n",
+        "returncode": 1,
+        "platform": "Windows"
+      },
+      "requests": {
+        "available": true,
+        "output": "Requests available\n",
+        "platform": "Windows"
+      },
+      "nmap": {
+        "available": true,
+        "output": "Python-nmap available\n",
+        "platform": "Windows"
+      },
+      "pywifi": {
+        "available": false,
+        "error": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import pywifi; print('PyWifi available')\n    ^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'pywifi'\n",
+        "returncode": 1,
+        "platform": "Windows"
+      }
+    },
+    "Wireless_Security": {
+      "aircrack-ng": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "airodump-ng": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "aireplay-ng": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "airmon-ng": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "wash": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "reaver": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "bully": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "pixiewps": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      }
+    },
+    "Network_Analysis": {
+      "nmap": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "wireshark": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "tshark": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "tcpdump": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "netcat": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "masscan": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      }
+    },
+    "Password_Recovery": {
+      "john": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "hashcat": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "hydra": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      },
+      "medusa": {
+        "available": false,
+        "note": "Tool requires Kali Linux or manual installation",
+        "platform": "Linux/WSL"
+      }
+    }
+  },
+  "summary": {
+    "total_tools": 28,
+    "available_tools": 8,
+    "availability_percentage": 28.57142857142857
+  }
+}

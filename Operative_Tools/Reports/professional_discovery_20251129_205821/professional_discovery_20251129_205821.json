@@ -1,0 +1,463 @@
+{
+  "session_id": "20251129_205821",
+  "timestamp": "2025-11-29T20:58:21.177046",
+  "scan_parameters": {
+    "scan_type": "comprehensive_professional",
+    "methods_used": [
+      "netsh_bssid",
+      "channel_analysis",
+      "security_audit"
+    ],
+    "platform": "win32"
+  },
+  "interfaces": [
+    {
+      "name": "Wi-Fi",
+      "guid": "9d32939a-a3c6-4dee-9764-bf2072c40020"
+    }
+  ],
+  "networks": [
+    {
+      "ssid": "RED_PROHIBIDA-2G",
+      "bssids": [
+        "e6:ab:89:b0:08:9f"
+      ],
+      "signals": [],
+      "channels": [
+        "36"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "5 GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.337923",
+      "channel_interference": {
+        "max_networks_same_channel": 2,
+        "interference_level": "Medium"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "FLOR DEL CARMEN",
+      "bssids": [
+        "8e:83:e8:92:3a:b4"
+      ],
+      "signals": [],
+      "channels": [
+        "11"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "2,4Â GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.337949",
+      "channel_interference": {
+        "max_networks_same_channel": 1,
+        "interference_level": "Low"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "FLOR DEL CARMEN-5G",
+      "bssids": [
+        "8e:83:e8:92:3a:b8"
+      ],
+      "signals": [],
+      "channels": [
+        "48"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "5 GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.337962",
+      "channel_interference": {
+        "max_networks_same_channel": 0,
+        "interference_level": "Low"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "Hidden Network",
+      "bssids": [
+        "2e:96:82:bd:11:2f",
+        "92:d3:cf:33:9c:ee"
+      ],
+      "signals": [],
+      "channels": [
+        "149",
+        "149"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "5 GHz",
+        "5 GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.337974",
+      "channel_interference": {
+        "max_networks_same_channel": 3,
+        "interference_level": "Medium"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "JosÃ© Pablo",
+      "bssids": [
+        "2c:96:82:bd:11:2f",
+        "2c:96:82:bd:11:28"
+      ],
+      "signals": [],
+      "channels": [
+        "149",
+        "6"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "5 GHz",
+        "2,4Â GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.337990",
+      "channel_interference": {
+        "max_networks_same_channel": 3,
+        "interference_level": "Medium"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "SONIA -1",
+      "bssids": [
+        "e4:f7:5b:21:9d:be"
+      ],
+      "signals": [],
+      "channels": [
+        "1"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "2,4Â GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.338005",
+      "channel_interference": {
+        "max_networks_same_channel": 0,
+        "interference_level": "Low"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "FUENTES",
+      "bssids": [
+        "14:46:58:41:68:d4"
+      ],
+      "signals": [],
+      "channels": [
+        "4"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "2,4Â GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.338015",
+      "channel_interference": {
+        "max_networks_same_channel": 0,
+        "interference_level": "Low"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "MAFER",
+      "bssids": [
+        "90:d3:cf:43:9c:ee",
+        "90:d3:cf:43:9c:ef"
+      ],
+      "signals": [],
+      "channels": [
+        "149",
+        "11"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "5 GHz",
+        "2,4Â GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.338023",
+      "channel_interference": {
+        "max_networks_same_channel": 3,
+        "interference_level": "Medium"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "NORIEGA",
+      "bssids": [
+        "90:d3:cf:3f:19:1f"
+      ],
+      "signals": [],
+      "channels": [
+        "6"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "2,4Â GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.338039",
+      "channel_interference": {
+        "max_networks_same_channel": 1,
+        "interference_level": "Low"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "FUENTES_5Ghz",
+      "bssids": [
+        "14:46:58:41:68:d8"
+      ],
+      "signals": [],
+      "channels": [
+        "36"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "5 GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.338047",
+      "channel_interference": {
+        "max_networks_same_channel": 2,
+        "interference_level": "Medium"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    },
+    {
+      "ssid": "RED_PROHIBIDA-5G",
+      "bssids": [
+        "e4:ab:89:b0:08:9f"
+      ],
+      "signals": [],
+      "channels": [
+        "36"
+      ],
+      "security_types": [],
+      "authentication": [],
+      "encryption": [
+        "CCMP"
+      ],
+      "network_types": [
+        "Infraestructura"
+      ],
+      "bands": [
+        "5 GHz"
+      ],
+      "first_seen": "2025-11-29T20:58:21.338055",
+      "channel_interference": {
+        "max_networks_same_channel": 2,
+        "interference_level": "Medium"
+      },
+      "security_analysis": {
+        "level": "Poor",
+        "vulnerabilities": [
+          "Open network - no encryption"
+        ],
+        "recommendations": [
+          "Upgrade to WPA2 or WPA3",
+          "Implement encryption and authentication"
+        ]
+      }
+    }
+  ],
+  "gateway_connectivity": {},
+  "analysis": {
+    "network_summary": {
+      "total_networks": 11,
+      "unique_ssids": 10,
+      "hidden_networks": 1,
+      "networks_with_bssids": 11,
+      "total_bssids": 14
+    },
+    "security_analysis": {
+      "excellent_security": 0,
+      "good_security": 0,
+      "fair_security": 0,
+      "poor_security": 11
+    },
+    "channel_analysis": {
+      "channels_used": [
+        "1",
+        "11",
+        "149",
+        "36",
+        "4",
+        "48",
+        "6"
+      ],
+      "channel_distribution": {
+        "36": 3,
+        "11": 2,
+        "48": 1,
+        "149": 4,
+        "6": 2,
+        "1": 1,
+        "4": 1
+      },
+      "high_interference_networks": 0
+    }
+  }
+}

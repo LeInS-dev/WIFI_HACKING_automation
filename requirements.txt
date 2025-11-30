@@ -1,0 +1,53 @@
+# WiFi Security Professional Toolkit - Dependencies
+# Version 3.0 - Professional Security Suite
+
+# Core Python Dependencies
+requests>=2.28.0
+nmap>=0.7.1
+scapy>=2.4.5
+python-nmap>=0.7.1
+
+# GUI and Interface
+tkinter  # Usually comes with Python
+
+# System Integration
+psutil>=5.9.0
+colorama>=0.4.4
+
+# Data Processing and Reporting
+pandas>=1.5.0
+numpy>=1.23.0
+tabulate>=0.9.0
+
+# Security Libraries (Optional - for enhanced capabilities)
+cryptography>=3.4.8
+pywifi>=1.1.12
+netifaces>=0.11.0
+
+# Logging and Monitoring
+loguru>=0.6.0
+rich>=12.6.0
+
+# Configuration and Utilities
+pyyaml>=6.0
+click>=8.1.0
+
+# Development and Testing (Optional)
+pytest>=7.2.0
+pytest-cov>=4.0.0
+black>=22.10.0
+flake8>=5.0.4
+
+# Documentation (Optional)
+sphinx>=5.3.0
+sphinx-rtd-theme>=1.1.1
+
+# Note: For full professional capabilities, install:
+# 1. Kali Linux WSL2
+# 2. Aircrack-ng suite
+# 3. Hashcat
+# 4. Wireshark
+# 5. John the Ripper
+# 6. Hydra
+
+# See README.md for complete installation instructions
