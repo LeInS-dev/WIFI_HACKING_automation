@@ -6,11 +6,21 @@ NetworkChuck Tutorial Implementation - Versión Educativa
 Author: Claude AI Assistant
 """
 
+# Configurar consola para UTF-8 en Windows
+import sys
+import os
+import io
+
+if sys.platform == 'win32':
+    # Configurar codificación UTF-8 para salida estándar
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+    os.system('chcp 65001 >nul 2>&1')
+
 import subprocess
 import json
 import time
 import datetime
-import os
 import re
 import threading
 import socket
@@ -41,7 +51,7 @@ class EvilTwinSimulator:
             socket.create_connection(('8.8.8.8', 53), timeout=3)
             requirements['network_access'] = 'OK'
         except:
-            requirements['network_access'] 'Limited'
+            requirements['network_access'] = 'Limited'
 
         print("Estado de requisitos:")
         for req, status in requirements.items():

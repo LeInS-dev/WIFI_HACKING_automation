@@ -6,11 +6,21 @@ NetworkChuck Tutorial Implementation
 Author: Claude AI Assistant
 """
 
+# Configurar consola para UTF-8 en Windows
+import sys
+import os
+import io
+
+if sys.platform == 'win32':
+    # Configurar codificación UTF-8 para salida estándar
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+    os.system('chcp 65001 >nul 2>&1')
+
 import subprocess
 import json
 import time
 import datetime
-import os
 import re
 from datetime import datetime
 
@@ -70,32 +80,38 @@ class WiFiDiscovery:
             if line.startswith('SSID'):
                 if current_network:
                     networks.append(current_network)
+                # Manejar SSID vacío o con espacios
+                ssid_part = line.split(':', 1) if ':' in line else [line, '']
+                ssid = ssid_part[1].strip() if len(ssid_part) > 1 else 'Hidden Network'
+                if not ssid:
+                    ssid = 'Hidden Network'
+
                 current_network = {
-                    'ssid': line.split(':')[1].strip() if ':' in line else 'Hidden Network',
+                    'ssid': ssid,
                     'bssids': [],
                     'signal_strengths': [],
                     'channels': [],
                     'security_types': []
                 }
-            elif line.startswith('Tipo de autenticación') or line.startswith('Authentication'):
+            elif line.startswith('Autenticación') or line.startswith('Authentication'):
                 if ':' in line:
-                    auth_type = line.split(':')[1].strip()
-                    if current_network:
+                    auth_type = line.split(':', 1)[1].strip()
+                    if current_network and auth_type:
                         current_network['security_types'].append(auth_type)
             elif line.startswith('Señal') or line.startswith('Signal'):
                 if ':' in line:
-                    signal = line.split(':')[1].strip()
-                    if current_network:
+                    signal = line.split(':', 1)[1].strip()
+                    if current_network and signal:
                         current_network['signal_strengths'].append(signal)
             elif line.startswith('Canal') or line.startswith('Channel'):
                 if ':' in line:
-                    channel = line.split(':')[1].strip()
-                    if current_network:
+                    channel = line.split(':', 1)[1].strip()
+                    if current_network and channel:
                         current_network['channels'].append(channel)
             elif line.startswith('BSSID'):
                 if ':' in line:
-                    bssid = line.split(':')[1].strip()
-                    if current_network:
+                    bssid = line.split(':', 1)[1].strip()
+                    if current_network and bssid:
                         current_network['bssids'].append(bssid)
 
         if current_network:

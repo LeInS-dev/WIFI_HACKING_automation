@@ -6,11 +6,21 @@ NetworkChuck Tutorial Implementation
 Author: Claude AI Assistant
 """
 
+# Configurar consola para UTF-8 en Windows
+import sys
+import os
+import io
+
+if sys.platform == 'win32':
+    # Configurar codificación UTF-8 para salida estándar
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+    os.system('chcp 65001 >nul 2>&1')
+
 import subprocess
 import json
 import time
 import datetime
-import os
 import re
 import hashlib
 from datetime import datetime
@@ -71,8 +81,8 @@ class WiFiPasswordAnalysis:
             variations.append(word)
             for num in range(100):
                 variations.append(f"{word}{num}")
-                variations.append(f"{word:02d}")
-                variations.append(f"{word:03d}")
+                variations.append(f"{word}{num:02d}")
+                variations.append(f"{word}{num:03d}")
 
         # Guardar wordlist
         with open(wordlist_file, 'w', encoding='utf-8') as f:

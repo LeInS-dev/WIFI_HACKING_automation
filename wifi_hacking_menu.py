@@ -6,8 +6,17 @@ Basado en el tutorial "3 Levels of WiFi Hacking" de NetworkChuck
 Author: Claude AI Assistant
 """
 
-import os
+# Configurar consola para UTF-8 en Windows
 import sys
+import os
+import io
+
+if sys.platform == 'win32':
+    # Configurar codificación UTF-8 para salida estándar
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+    os.system('chcp 65001 >nul 2>&1')
+
 import subprocess
 import json
 import time
